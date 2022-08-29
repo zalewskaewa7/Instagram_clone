@@ -101,61 +101,7 @@ class Login extends React.Component {
                             hideError={this.hideError.bind(this)}
                             logUser={this.logUser.bind(this)}
                         />
-                        {/* <form
-                            className="formLogin"
-                            onSubmit={(e) => this.logUser(e)}
-                        >
-                            <input
-                                type="hidden"
-                                name="_token"
-                                value={token}
-                            ></input>
-                            <div className="userName">
-                                <input
-                                    type="text"
-                                    placeholder="Numer telefonu, nazwa użytkownika lub adres "
-                                    name="userName"
-                                    value={this.state.userName}
-                                    onChange={(e) =>
-                                        this.changeInput(
-                                            e.target.name,
-                                            e.target.value
-                                        )
-                                    }
-                                    onFocus={(e) => {
-                                        this.setState({ errorName: "" });
-                                    }}
-                                ></input>
-                                <div className="error">
-                                    {this.state.errorName}
-                                </div>
-                            </div>
-                            <div className="password">
-                                <input
-                                    type="password"
-                                    placeholder="Hasło"
-                                    name="userPassword"
-                                    value={this.state.userPassword}
-                                    onChange={(e) =>
-                                        this.changeInput(
-                                            e.target.name,
-                                            e.target.value
-                                        )
-                                    }
-                                    onFocus={(e) => {
-                                        this.setState({ errorPassword: "" });
-                                    }}
-                                ></input>
-                                <div className="error">
-                                    {this.state.errorPassword}
-                                </div>
-                            </div>
-                            <div className="btnDiv">
-                                <button className="btn" value="Zaloguj się">
-                                    Zaloguj się
-                                </button>
-                            </div>
-                        </form> */}
+                        
                         <div className="fblogindiv">
                             <img className="fbloginimg" src={fbloginfrom} />
                         </div>
