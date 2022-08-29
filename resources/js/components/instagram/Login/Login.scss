@@ -1,0 +1,123 @@
+.loginPage {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 4%;
+    justify-content: space-around;
+
+    .leftLogin {
+        .imgTelephone {
+            height: 100%;
+            width: auto;
+        }
+    }
+    .rightLogin {
+        flex-flow: column wrap;
+        justify-content: center;
+
+        .rightUp {
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            margin: 3% 4%;
+            padding: 2%;
+            border: 1px solid silver;
+
+            .imgTitle {
+                display: flex;
+                justify-content: center;
+                margin: 6%;
+                padding: 6%;
+
+                .imgInstagram {
+                    width: auto;
+                    height: 90%;
+                }
+            }
+
+            .formLogin {
+                flex-flow: column wrap;
+                margin: 2%;
+                width: 100%;
+
+                .userName,
+                .password {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    margin: 2%;
+
+                    input {
+                        flex: 0 90%;
+                        padding: 2%;
+                        margin: 2%;
+                        border: 1px solid silver;
+                        border-radius: 2px;
+                        background-color: rgba(185, 181, 181, 0.1);
+                    }
+                    .error {
+                        flex: 0 80%;
+                        order: 2;
+                        align-self: center;
+                        color: red;
+                        font-weight: 600;
+                    }
+                }
+                .btnDiv {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    .btn {
+                        border: 0px;
+                        width: 90%;
+                        padding: 2%;
+                        color: white;
+                        background-color: rgba(75, 132, 229, 0.4);
+                        border-radius: 2px;
+                    }
+                }
+            }
+            .fblogindiv {
+                //     display: flex;
+                flex: 0 90%;
+                //     flex-wrap: column wrap;
+
+                .fbloginimg {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .registerDiv {
+        display: flex;
+
+        margin: 3% 4%;
+        padding: 2%;
+        justify-content: center;
+        border: 1px solid silver;
+
+        .registerSpan {
+            color: rgb(75, 132, 229);
+            cursor: pointer;
+        }
+    }
+    .divImgToDovnloadApp {
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+        padding: 2%;
+        .imgIconsToDownloadApp {
+            align-self: center;
+        }
+    }
+}
+@media all and (max-width: 1000px) {
+    .loginPage {
+        flex-flow: column wrap;
+        .leftLogin {
+            display: none;
+        }
+    }
+}

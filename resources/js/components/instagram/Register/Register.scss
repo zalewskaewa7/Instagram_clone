@@ -1,0 +1,111 @@
+.registerPage {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 4%;
+    padding: 2%;
+    justify-content: center;
+
+    .componentUp {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 4%;
+        padding: 2%;
+        border: 1px solid silver;
+        justify-content: center;
+
+        .registerImgDiv {
+            margin: 2%;
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+
+            .registerImg {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .registerForm {
+            flex-flow: column wrap;
+            justify-content: center;
+            margin: 2%;
+            width: 100%;
+
+            .inputDiv {
+                display: flex;
+
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 2%;
+                padding: 2%;
+
+                input {
+                    padding: 2%;
+                    width: 90%;
+                    border: 1px solid silver;
+                    border-radius: 2px;
+                    background-color: rgba(185, 181, 181, 0.1);
+                    justify-content: center;
+                }
+                .error {
+                    flex: 0 80%;
+                    order: 2;
+                    align-self: center;
+                    color: red;
+                    font-weight: 600;
+                }
+            }
+            .btnDiv {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+
+                margin: 2%;
+                padding: 2%;
+
+                .btn {
+                    border: 0px;
+                    width: 90%;
+                    padding: 2%;
+                    color: white;
+                    background-color: rgba(75, 132, 229, 0.4);
+                    border-radius: 2px;
+                }
+            }
+        }
+        .acceptRegDiv {
+            display: flex;
+            flex: 0 90%;
+            justify-content: center;
+
+            .acceptRegImg {
+                width: 90%;
+                height: auto;
+            }
+        }
+    }
+
+    .divlinkTologinPage {
+        display: flex;
+
+        margin: 3% 4%;
+        padding: 2%;
+        justify-content: center;
+        border: 1px solid silver;
+        .linkSpan {
+            color: rgb(75, 132, 229);
+            cursor: pointer;
+        }
+    }
+    .divImgToDovnloadApp {
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+        padding: 2%;
+        .imgIconsToDownloadApp {
+            flex: 0 90%;
+            align-self: center;
+        }
+    }
+}
